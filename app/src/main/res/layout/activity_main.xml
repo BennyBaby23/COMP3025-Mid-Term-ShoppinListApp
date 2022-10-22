@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    File name: Mid-Term Shopping List-->
+<!--    Author Name: Benny Baby-->
+<!--    STUDENT ID : 200469127-->
+<!--    App Description : Shopping list app for mid-term exam-->
+<!--    Version: Android Studio Dolphin | 2021.3.1 for Windows 64-bit -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idRLContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--on below line we are creating edit text
+        for adding a new item to list-->
+
+
+    <!--button for adding item from edit text to list-->
+    <EditText
+        android:id="@+id/idTextBox"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/idBtnAdd"
+        android:hint="Enter Shopping List here" />
+
+    <Button
+        android:id="@+id/idBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="334dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#059CAF"
+        android:text="Add+"
+        android:textAllCaps="false"
+        app:icon="@drawable/addcart"
+        app:iconTint="#171414" />
+
+    <!--list view to display list of languages-->
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="333dp"
+        android:layout_height="84dp"
+        android:layout_above="@+id/idListBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="-38dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="My Shopping List"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/idListBox"
+        android:layout_width="match_parent"
+        android:layout_height="572dp"
+        android:layout_below="@id/idTextBox"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="107dp" />
+
+    <!--button for saving item from text box to list to print to logcat-->
+    <Button
+        android:id="@+id/save"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="292dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="#7C8485"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="#171414"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!--button for deleting item from text box to list-->
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="105dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="304dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="47dp"
+        android:backgroundTint="#7C8485"
+        android:text="Cancel"
+        android:textAlignment="center"
+        android:textColor="#171414"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
