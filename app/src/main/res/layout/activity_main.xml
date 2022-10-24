@@ -80,37 +80,39 @@
     <!--button for saving item from text box to list to print to logcat-->
     <Button
         android:id="@+id/save"
-        android:layout_width="105dp"
-        android:layout_height="60dp"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="43dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="51dp"
         android:backgroundTint="#7C8485"
         android:text="Save"
         android:textAlignment="center"
         android:textColor="#171414"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_save" />
 
     <!--button for deleting item from text box to list-->
     <Button
         android:id="@+id/cancel"
-        android:layout_width="105dp"
-        android:layout_height="60dp"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="304dp"
+        android:layout_marginStart="286dp"
         android:layout_marginEnd="31dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="52dp"
         android:backgroundTint="#7C8485"
         android:text="Cancel"
         android:textAlignment="center"
         android:textColor="#171414"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_delete" />
 
 </RelativeLayout>
